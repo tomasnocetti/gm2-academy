@@ -7,10 +7,34 @@
     <title>Javascript Basics</title>
 </head>
 <body>
-    <form>
-        <input name="cantidad" type="text" />
+    <!-- Censo 2022 -->
+    <form id="censo-form">
+
+        <label for="cant_de_familiares">Familiares</label>
+        <input name="cant_de_familiares" type="text" /> 
+        <br/>
+        <label for="edad_familiar1">Edad 1</label>
+        <input name="edad_familiar1" type="text" /> 
+        <br/>
+        <label for="edad_familiar2">Edad 2</label>
+        <input name="edad_familiar2" type="text" /> 
+        <br/>
+        <label for="salario_de_la_casa">Salario </label>
+        <input name="salario_de_la_casa" type="text" /> 
+        <br/>
         <input type="submit" />
     </form>
+
+    <table id="tabla-familiares">
+        <tr>
+            <th>Familiares</th>
+            <th>Edad1</th>
+            <th>Edad2</th>
+            <th>Salario</th>
+        </tr>
+        
+    </table>
+
     <script type="module" src="./js/functions.js"></script>
     <script src="./js/main.js"></script>
 </body>
